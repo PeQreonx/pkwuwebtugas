@@ -205,3 +205,134 @@ body {
     box-shadow: 0px -6px 15px var(--shadow);
 }
 
+/* ================= RESPONSIVE DESKTOP KECIL ================= */
+@media (max-width: 900px) {
+
+    /* HEADER */
+    #header {
+        height: 260px;
+    }
+
+    .logo-left img,
+    .logo-right img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .header-content h1 {
+        font-size: 38px;
+    }
+
+    /* NAVIGASI */
+    #navigasi ul {
+        height: 60px;
+        gap: 20px;
+    }
+
+    #navigasi a {
+        font-size: 18px;
+    }
+
+    /* CARD BOX */
+    .card-box {
+        gap: 25px;
+        margin-top: 25px;
+    }
+
+    .profile-card {
+        width: 300px;
+        padding: 22px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* ================= RESPONSIVE HP (max 600px) ================= */
+@media (max-width: 600px) {
+
+    /* HEADER */
+    #header {
+        height: 190px;
+    }
+
+    .logo-left img {
+        width: 140px;
+        height: 110px;
+    }
+
+    .logo-right img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .header-content h1 {
+        font-size: 26px;
+        padding: 0 10px;
+    }
+
+    /* NAVIGASI MOBILE */
+    #navigasi ul {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px 0;
+        gap: 12px;
+    }
+
+    #navigasi li {
+        margin: 0;
+    }
+
+    #navigasi a {
+        font-size: 16px;
+    }
+
+    /* PROFILE CARD STACK */
+    .card-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profile-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .profile-photo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .profile-card h2 {
+        font-size: 20px;
+    }
+
+    .kelas {
+        font-size: 15px;
+    }
+
+    .desc {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    /* INSTAGRAM BUTTON */
+    .btn-ig {
+        width: 45px;
+        height: 45px;
+    }
+
+    .btn-ig img {
+        width: 22px;
+        height: 22px;
+    }
+
+    /* FOOTER */
+    #footer {
+        font-size: 14px;
+        padding: 18px 0;
+    }
+}
