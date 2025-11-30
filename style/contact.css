@@ -1,0 +1,190 @@
+
+
+/* ===== COLOR PALETTE ===== */
+:root {
+    --dark-blue: #1B3C53;
+    --blue: #234C6A;
+    --steel: #456882;
+    --light: #E3E3E3;
+    --white: #ffffff;
+    --shadow: rgba(0,0,0,0.15);
+    --shadow-darker: rgba(0,0,0,0.25);
+}
+
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* ================= HEADER ================= */
+#header {
+    width: 100%;
+    height: 360px;
+    background-image: url("../image/bgdoang.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 0px 8px 20px var(--shadow);
+}
+
+#header .overlay {
+    background: rgba(27, 60, 83, 0.55);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.header-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 4px 10px var(--shadow-dark);
+}
+
+.logo-left img,
+.logo-right img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    
+}
+
+.logo-left img {
+    width: 230px;
+    height: 180px;
+}
+
+/* ================= NAVIGASI ================= */
+#navigasi {
+    width: 100%;
+    background-color: var(--dark-blue);
+    box-shadow: 0px 6px 15px var(--shadow);
+}
+
+#navigasi ul {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    align-items: center;
+    list-style: none;
+}
+
+#navigasi li {
+    margin: 0 50px;
+}
+
+#navigasi a {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+#navigasi a:hover {
+    color: var(--steel);
+}
+
+
+/* MAIN CONTACT */
+.main-contact {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* FORM STYLING */
+.form-contact {
+    background-color: var(--white);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px var(--shadow);
+}
+
+.form-contact h2 {
+    text-align: center;
+    color: var(--dark-blue);
+    margin-bottom: 25px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--steel);
+    box-shadow: 0px 0px 6px rgba(35,76,106,0.3);
+}
+
+/* BUTTON SUBMIT */
+.btn-submit {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+    background: linear-gradient(45deg, #fdf497, #fd5949, #d6249f, #285AEB);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.25);
+}
+
+
+
+/* ================= FOOTER ================= */
+#footer {
+    background-color: var(--steel);
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0px -6px 15px var(--shadow);
+}
